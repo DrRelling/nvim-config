@@ -1,10 +1,14 @@
 return {
   'stevearc/oil.nvim',
   ---@module 'oil'
-  ---@type oil.SetupOpts
   opts = {},
-	keymaps = { 
-		["h"] = { "actions.toggle_hidden", mode = "n" }
+	config = function()
+		require('oil').setup({
+			delete_to_trash = true,
+		})
+	end,
+	keys = {
+		{ "<leader>O", "<CMD>Oil --float<CR>", desc = "Open Oil (float)" },
 	},
   dependencies = { { "echasnovski/mini.icons", opts = {} } },
   lazy = false,
