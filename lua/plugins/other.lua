@@ -14,7 +14,6 @@ local angular_less = {
 				target = "/%1/%2/%3.*.less",
 				context = "other styles",
 			},
-
 			{
 				target = "/%1/%2/%3.component.spec.ts",
 				context = "test",
