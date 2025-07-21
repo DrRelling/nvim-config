@@ -7,6 +7,7 @@ vim.lsp.enable({
 	"luals",
 	"vtsls",
 	"eslint",
+	"java"
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
