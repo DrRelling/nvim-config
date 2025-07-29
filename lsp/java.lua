@@ -96,18 +96,7 @@ return {
 		workspace = get_jdtls_workspace_dir(),
 		jvm_args = {},
 		os_config = nil,
-		-- bundles = {
-		-- 	vim.fn.glob(mason_dir .. "/java-debug-adapter/extension/server/com.microsoft.java.debug.plugin-*.jar", 1),
-		-- },
-		-- extendedClientCapabilities = {
-		-- 	-- this allows correct progress reports
-		-- 	progressReportProvider = false,
-		-- },
 	},
-	-- on_attach = function()
-	-- 	require("jdtls").add_commands()
-	-- 	require("jdtls").setup_dap({})
-	-- end,
 	handlers = {
 		-- Due to an invalid protocol implementation in the jdtls we have to conform these to be spec compliant.
 		-- https://github.com/eclipse/eclipse.jdt.ls/issues/376
