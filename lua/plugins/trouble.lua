@@ -2,7 +2,7 @@ return {
   "folke/trouble.nvim",
   opts = {
 		win = {
-			position = "right",
+			position = "bottom",
 			focus = true
 		}
 	}, -- for default options, refer to the configuration section for custom setup.
