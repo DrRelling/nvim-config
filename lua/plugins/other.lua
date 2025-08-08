@@ -99,9 +99,9 @@ return {
 		})
 	end,
 	keys = {
-    { "<leader>O", "<cmd>:Other<CR>", desc = "Open Other window (this buffer)" },
-    { "<leader>ot", "<cmd>:OtherTabNew<CR>", desc = "Open Other window (new tab)" },
-    { "<leader>oh", "<cmd>:OtherSplit<CR>", desc = "Open Other window (horizontal split)" },
-    { "<leader>ov", "<cmd>:OtherVSplit<CR>", desc = "Open Other window (vertical split)" },
+        { "<leader>o", "<cmd>:Other<CR>", desc = "Open Other window (this buffer)" },
+        { "<leader>Ot", "<cmd>:OtherTabNew<CR>", desc = "Open Other window (new tab)" },
+        { "<leader>Oh", "<cmd>:OtherSplit<CR>", desc = "Open Other window (horizontal split)" },
+        { "<leader>Ov", "<cmd>:OtherVSplit<CR>", desc = "Open Other window (vertical split)" },
 	}
 }
