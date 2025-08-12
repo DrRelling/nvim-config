@@ -1,3 +1,5 @@
+vim.keymap.set("x", "<leader>y", '"+y;', { noremap = true, silent = true, desc = 'Yank to system clipboard' })
+
 require("which-key").add({
 	{ "gd", desc = "Go to definition" },
 	{ "gtd", desc = "Go to type definition" },
