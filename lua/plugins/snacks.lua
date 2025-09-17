@@ -23,5 +23,6 @@ return {
         { "<leader>fc", function() Snacks.picker.cliphist() end, desc = "Clip History" },
         { "<leader>fn", function() Snacks.picker.notifications() end, desc = "Notification History" },
         { "<leader>fr", function() Snacks.picker.recent() end, desc = "Recent Files" },
+        { "<leader>cR", function() Snacks.picker.lsp_references() end, desc = "Get References" }
 	}
 }
