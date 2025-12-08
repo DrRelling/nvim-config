@@ -26,7 +26,11 @@ return {
 			typescript = { "prettierd", "prettier", stop_after_first = true },
 			html = { "prettierd", "prettier", stop_after_first = true },
 			htmlangular = { "prettierd", "prettier", stop_after_first = true },
+			css = { "prettierd", "prettier", stop_after_first = true },
+			json = { "prettierd", "prettier", stop_after_first = true },
+			yaml = { "prettierd", "prettier", stop_after_first = true },
 			java = { lsp_format = "prefer" },
+            python = { "black"}
 		}
 
 		opts.default_format_opts = {

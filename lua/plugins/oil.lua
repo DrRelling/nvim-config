@@ -4,7 +4,7 @@ return {
   opts = {},
 	config = function()
 		require('oil').setup({
-			delete_to_trash = true,
+			delete_to_trash = true
 		})
 	end,
 	keys = {

@@ -1,13 +1,15 @@
 require("config.options")
 require("config.lazy")
 require("config.keymaps")
+require("config.lazygit")
 
 vim.lsp.enable({
 	"angularls",
 	"luals",
-	"vtsls",
 	"eslint",
-	"java"
+    "vtsls",
+	"java",
+    "python"
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
@@ -24,8 +26,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		end
 
 		local opts = { buffer = args.buf }
-		vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", opts)
-		vim.keymap.set("n", "gtd", "<cmd>lua vim.lsp.buf.type_definition()<cr>", opts)
+		vim.keymap.set("n", "gd", "<cmd>lua Snacks.picker.lsp_definitions()<cr>", opts)
+        vim.keymap.set("n", "gr", "<cmd>lua Snacks.picker.lsp_references()<cr>", opts)
+		vim.keymap.set("n", "gD", "<cmd>lua Snacks.picker.lsp_declarations()<cr>", opts)
 		vim.keymap.set("n", "<leader>cr", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
 		vim.keymap.set("n", "<leader>ca", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 	end,

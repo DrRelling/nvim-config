@@ -5,6 +5,12 @@ vim.keymap.set(
 	'<cmd>let @+=@0<CR>',
 	{ noremap = true, silent = true, desc = "Copy last yank to system clipboard" }
 )
+vim.keymap.set(
+	{ "n" },
+	"<leader>u",
+	require('uuid-nvim').insert_v4,
+	{ noremap = true, silent = true, desc = "Insert UUID" }
+)
 
 require("which-key").add({
 	{ "gd", desc = "Go to definition" },
@@ -17,4 +23,6 @@ require("which-key").add({
 
 	{ "<leader>cr", desc = "Rename" },
 	{ "<leader>ca", desc = "Code actions" },
+
+	{ "<leader>g", desc = "LazyGit" },
 })

@@ -2,6 +2,9 @@
 
 return {
 	cmd = { "vtsls", "--stdio" },
-  filetypes = { "typescript", "javascript" },
-  root_markers = { "tsconfig.json", "package.json" },
+	filetypes = { "typescript", "javascript" },
+	root_markers = { "tsconfig.json", "package.json" },
+    settings = {
+        autoUseWorkspaceTsdk = true
+    }
 }
