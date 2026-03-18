@@ -88,7 +88,7 @@ return {
 		get_jdtls_config_dir(),
 		"-data",
 		get_jdtls_workspace_dir(),
-		get_jdtls_jvm_args(),
+		get_jdtls_jvm_args()
 	},
 	filetypes = { "java" },
 	root_markers = { "build.gradle", "build.gradle.kts" },

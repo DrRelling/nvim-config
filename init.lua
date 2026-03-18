@@ -9,7 +9,7 @@ vim.lsp.enable({
 	"eslint",
     "vtsls",
 	"java",
-    "python"
+    "gopls"
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {

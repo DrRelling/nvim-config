@@ -1,5 +1,7 @@
 return {
 	"folke/snacks.nvim",
+	priority = 1000,
+	lazy = false,
 	config = function()
 		vim.api.nvim_set_hl(0, "SnacksPickerGitStatusUntracked", { fg = "#FFA500" })
 	end,
